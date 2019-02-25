@@ -10,3 +10,8 @@ dependencies {
    compile 'com.spotify.sdk:spotify-player-beta23-noconnect-2.20b@aar'
 }
 
+android {
+   aaptOptions.cruncherEnabled = false
+   aaptOptions.useNewCruncher = false
+}
+
