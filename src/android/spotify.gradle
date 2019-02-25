@@ -1,8 +1,7 @@
 repositories{
-   mavenCentral()
    jcenter()
-   flatDir{
-      dirs 'libs'
+   flatDir {
+      dirs 'libs', 'src/main/libs'
    }
 }
 
