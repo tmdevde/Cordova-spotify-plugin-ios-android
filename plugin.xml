@@ -25,10 +25,10 @@
             android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         </config-file>
     <config-file parent="/*" target="AndroidManifest.xml" />
-        <resource-file src="libs/spotify-auth-beta23-noconnect-2.20b.aar" target-dir="libs/" />
-        <resource-file src="libs/spotify-player-beta23-noconnect-2.20b.aar" target-dir="libs/" />
-        <resource-file src="src/android/SpotifyPlugin.java" target-dir="src/cordova/plugin/spotify/" />
-        <resource-file src="src/android/SpotifyPluginController.java" target-dir="src/cordova/plugin/spotify/" />
+        <source-file src="libs/spotify-auth-beta23-noconnect-2.20b.aar" target-dir="libs/" />
+        <source-file src="libs/spotify-player-beta23-noconnect-2.20b.aar" target-dir="libs/" />
+        <source-file src="src/android/SpotifyPlugin.java" target-dir="src/cordova/plugin/spotify/" />
+        <source-file src="src/android/SpotifyPluginController.java" target-dir="src/cordova/plugin/spotify/" />
         <framework custom="true" src="src/android/spotify.gradle" type="gradleReference" />
     </platform>
     
@@ -60,7 +60,7 @@
             </array>
         </config-file>
         <header-file src="src/ios/SpotifyPlugin.h" />
-        <resource-file src="src/ios/SpotifyPlugin.m" />
+        <source-file src="src/ios/SpotifyPlugin.m" />
         
         <framework src="src/ios/SpotifyAudioPlayback.framework" custom="true" />
         <framework src="src/ios/SpotifyAuthentication.framework" custom="true" />
