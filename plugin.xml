@@ -27,8 +27,8 @@
     <config-file parent="/*" target="AndroidManifest.xml" />
         <resource-file src="libs/spotify-auth-beta23-noconnect-2.20b.aar" target-dir="libs/" />
         <resource-file src="libs/spotify-player-beta23-noconnect-2.20b.aar" target-dir="libs/" />
-        <resource-file src="src/android/SpotifyPlugin.java" target-dir="src/cordova/plugin/spotify/" />
-        <resource-file src="src/android/SpotifyPluginController.java" target-dir="src/cordova/plugin/spotify/" />
+        <source-file src="src/android/SpotifyPlugin.java" target-dir="src/cordova/plugin/spotify/" />
+        <source-file src="src/android/SpotifyPluginController.java" target-dir="src/cordova/plugin/spotify/" />
         <framework custom="true" src="src/android/spotify.gradle" type="gradleReference" />
     </platform>
     
