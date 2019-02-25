@@ -8,7 +8,7 @@
     <preference name="URL_SCHEME_LT" />
 
     <platform name="android">
-        <config-file target="AndroidManifest.xml" parent="/manifest">
+        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
         </config-file>
         <config-file parent="/*" target="res/xml/config.xml">
