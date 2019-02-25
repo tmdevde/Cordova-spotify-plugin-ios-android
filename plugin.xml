@@ -8,7 +8,7 @@
     <preference name="URL_SCHEME_LT" />
 
     <platform name="android">
-        <config-file target="/hello/AndroidManifest.xml" parent="/manifest">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
         </config-file>
         <config-file parent="/*" target="res/xml/config.xml">
@@ -20,15 +20,15 @@
             <string name="redirect_uri">$URL_SCHEME_LT</string>
         </config-file>
         
-        <config-file target="/hello2/AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:name="com.spotify.sdk.android.authentication.LoginActivity"
             android:label="@string/app_name" android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         </config-file>
-    <config-file parent="/*" target="/hello3/AndroidManifest.xml" />
-        <source-file src="libs/spotify-auth-beta23-noconnect-2.20b.aar" target-dir="libs/" />
-        <source-file src="libs/spotify-player-beta23-noconnect-2.20b.aar" target-dir="libs/" />
-        <source-file src="src/android/SpotifyPlugin.java" target-dir="src/cordova/plugin/spotify/" />
-        <source-file src="src/android/SpotifyPluginController.java" target-dir="src/cordova/plugin/spotify/" />
+    <config-file parent="/*" target="AndroidManifest.xml" />
+        <resource-file src="libs/spotify-auth-beta23-noconnect-2.20b.aar" target-dir="libs/" />
+        <resource-file src="libs/spotify-player-beta23-noconnect-2.20b.aar" target-dir="libs/" />
+        <resource-file src="src/android/SpotifyPlugin.java" target-dir="src/cordova/plugin/spotify/" />
+        <resource-file src="src/android/SpotifyPluginController.java" target-dir="src/cordova/plugin/spotify/" />
         <framework custom="true" src="src/android/spotify.gradle" type="gradleReference" />
     </platform>
     
