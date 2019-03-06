@@ -315,7 +315,6 @@
     [str appendFormat:@"'%@',",metadata.currentTrack.name ];
     [str appendFormat:@"'%@',",metadata.currentTrack.artistName ];
     [str appendFormat:@"'%@',",metadata.currentTrack.albumName ];
-    [str appendFormat:@"'%@',",metadata];
     [str appendFormat:@"%f])",metadata.currentTrack.duration ];
     [self.commandDelegate evalJs:str];
 }
