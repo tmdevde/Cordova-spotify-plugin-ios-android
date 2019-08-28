@@ -450,7 +450,7 @@ public class SpotifyPlugin extends CordovaPlugin implements
                 default:
                     JSONArray array3 = new JSONArray();
                     array3.put("did not login");
-                    array.put(response.getError());
+                    array3.put(response.getError());
                     sendUpdate("onDidNotLogin", new Object[]{array3});
                     break;
             }
