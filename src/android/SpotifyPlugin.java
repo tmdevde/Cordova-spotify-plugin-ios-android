@@ -444,11 +444,13 @@ public class SpotifyPlugin extends CordovaPlugin implements
                     loginCallback.error(response.getError());
                     JSONArray array = new JSONArray();
                     array.put("did not login");
+                    array.put(response.getError());
                     sendUpdate("onDidNotLogin", new Object[]{array});
                     break;
                 default:
                     JSONArray array3 = new JSONArray();
                     array3.put("did not login");
+                    array.put(response.getError());
                     sendUpdate("onDidNotLogin", new Object[]{array3});
                     break;
             }
