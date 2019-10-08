@@ -93,7 +93,16 @@ module.exports = {
                      [val]
                      )
     },
-     getToken : function(success,error){
+    getPosition : function(){
+        exec(
+                     function(){},
+                     function(){},
+                     "SpotifyPlugin",
+                     "getPosition",
+                     []
+                     )
+    },
+    getToken : function(success,error){
                exec(
                    success,// function(res){alert(res);},//res - TOKEN
                     error,//function(){console.log("error");},
@@ -101,7 +110,7 @@ module.exports = {
                     "getToken",
                     []
                     )
-               },
+    },
 
     Events : {
         onPlayerPlay : function(args){},
