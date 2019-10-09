@@ -14,8 +14,8 @@ module.exports = {
     },
      auth : function(token,id){
                    exec(
-                        function(res) { return res; },
-                        function(res) { return res; },
+                        function(res) { alert('success'); return res; },
+                        function(res) { alert('error'); return res; },
                         "SpotifyPlugin",
                         "auth",
                         [token,id]
