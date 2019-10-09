@@ -21,37 +21,37 @@ module.exports = {
                         [token,id]
                         )
                    },
-    play:function(val){
+    play:function(val,success,error){
         exec(
-                     function() {},
-                     function() {},
+                    success,
+                    error,
                      "SpotifyPlugin",
                      "play",
                      [val]
                      )
     },
-    pause : function(){
+    pause : function(success,error){
         exec(
-                     function(){},
-                     function(){},
+                    success,
+                    error,
                      "SpotifyPlugin",
                      "pause",
                      []
                      )
     },
-    next : function(){
+    next : function(success,error){
         exec(
-                     function(){},
-                     function(){},
+                    success,
+                    error,
                      "SpotifyPlugin",
                      "next",
                      []
                      )
     },
-    prev : function(){
+    prev : function(success,error){
         exec(
-                     function(){},
-                     function(){},
+                    success,
+                    error,
                      "SpotifyPlugin",
                      "prev",
                      []
@@ -66,19 +66,19 @@ module.exports = {
                      []
                      )
     },
-    seek : function(val){
+    seek : function(val,success,error){
         exec(
-                     function(){},
-                     function(){},
+                    success,
+                    error,
                      "SpotifyPlugin",
                      "seek",
                      [val]
                      )
     },
-    seekTo : function(val){
+    seekTo : function(val,success,error){
         exec(
-                    function(){},
-                    function(){},
+                    success,
+                    error,
                     "SpotifyPlugin",
                     "seekTo",
                     [val]
