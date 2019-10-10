@@ -104,7 +104,7 @@ module.exports = {
     },
     getToken : function(success,error){
                exec(
-                   success,// function(res){alert(res);},//res - TOKEN
+                    success,// function(res){alert(res);},//res - TOKEN
                     error,//function(){console.log("error");},
                     "SpotifyPlugin",
                     "getToken",
